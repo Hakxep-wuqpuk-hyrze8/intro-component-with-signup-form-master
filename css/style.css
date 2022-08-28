@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 40vw;
+  height: 80vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #fff;
+  width: 85%;
+  font-size: 20px;
+}
+.title h1 {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  line-height: 2.5rem;
+}
+.title p {
+  font-size: 10px;
+}
+
+.submit-section {
+  width: 31vw;
+  height: 90%;
+  text-align: center;
+  position: relative;
+  top: 8px;
+}
+
+.submit-section .form {
+  padding: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 7px 0 0 rgba(131, 117, 117, 0.217);
+}
+.submit-section p small {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.submit-section p strong {
+  color: red;
+}
+
+.bar {
+  height: 3rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: hsl(246, 41%, 56%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 7px 0 0 rgba(131, 117, 117, 0.217);
+  color: #fff;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.bar p {
+  font-weight: bold;
+  margin-right: 4px;
+  font-size: 10px;
+}
+
+.submit-section input {
+  height: 2.5rem;
+  width: 27vw;
+  box-sizing: border-box;
+  margin: 15px auto;
+  padding: 0 2rem;
+  border-radius: 5px;
+  border-color: rgba(114, 104, 104, 0.1);
+  font-weight: 700;
+}
+
+.submit-btn {
+  height: 2.5rem;
+  width: 27vw;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  margin: 0.5rem 1rem 0;
+  border-radius: 5px;
+  background-color: hsl(154, 59%, 51%, 0.9);
+  border: 1px hsl(154, 57%, 46%) solid;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 0 0 hsl(154, 57%, 46%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+.submit-btn:hover {
+  background-color: rgba(20, 185, 113, 0.55);
+  box-shadow: 0 2px 0 0 hsl(154, 57%, 46%, 0.55);
+  border: 1px hsl(154, 57%, 46%, 0.55) solid;
+}
+
+.error {
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px top 7px;
+  border: 2px hsl(0, 69%, 53%) solid !important;
+}
+.errorMessage {
+  height: 10px;
+  padding-right: 2rem;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 0.75rem;
+  font-size: 12px;
+  color: hsl(0, 100%, 74%);
+}
+
+.submit-section input::placeholder {
+  color: var(--c);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+  }
+  .box {
+    width: 100vw;
+    height: 60vh;
+  }
+  .submit-section {
+    width: 80vw;
+  }
+  .submit-section input {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .submit-btn {
+    width: 80%;
+  }
+}
